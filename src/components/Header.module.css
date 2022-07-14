@@ -1,0 +1,10 @@
+.header {
+    grid-area: h;
+    padding: 10px 16px 0;
+}
+
+.header img {
+    width: auto;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
