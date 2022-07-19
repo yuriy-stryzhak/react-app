@@ -38,4 +38,9 @@ body {
         "n c";
 }
 
+.wrapper-content {
+    grid-area: c;
+    background-color: rgb(175, 222, 239);
+}
+
 
