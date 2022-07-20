@@ -6,11 +6,11 @@ const Navbar = () => {
     return (
         <nav className={s.nav}>
             <ul className={s.nav__list}>
-                <li><NavLink className={`${s.nav__link}`} to="/profile">Profile</NavLink></li>
-                <li><NavLink className={s.nav__link} to="/dialogs">Messages</NavLink></li>
-                <li><NavLink className={s.nav__link} to="/news">News</NavLink></li>
-                <li><NavLink className={s.nav__link} to="/music">Music</NavLink></li>
-                <li><NavLink className={s.nav__link} to="/settings">Settings</NavLink></li>
+                <li><NavLink className={({ isActive }) => isActive ? `${s.active} ${s.nav__link}` : `${s.nav__link}`} to="/profile">Profile</NavLink></li>
+                <li><NavLink className={({ isActive }) => isActive ? `${s.active} ${s.nav__link}` : `${s.nav__link}`} to="/dialogs">Messages</NavLink></li>
+                <li><NavLink className={({ isActive }) => isActive ? `${s.active} ${s.nav__link}` : `${s.nav__link}`} to="/news">News</NavLink></li>
+                <li><NavLink className={({ isActive }) => isActive ? `${s.active} ${s.nav__link}` : `${s.nav__link}`} to="/music">Music</NavLink></li>
+                <li><NavLink className={({ isActive }) => isActive ? `${s.active} ${s.nav__link}` : `${s.nav__link}`} to="/settings">Settings</NavLink></li>
             </ul>
         </nav>
     );
